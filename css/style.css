@@ -1,0 +1,422 @@
+/*
+    Auteurs:    Dorian, Yannis
+    Date-debut: 19/05/2023
+    Date-fin:   ...
+    But: Styliser la page principale
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bruno+Ace&family=Bruno+Ace+SC&family=Bungee&family=Changa&family=Crimson+Pro&family=Dancing+Script:wght@400;700&family=Jura&family=Lobster&family=Monoton&family=Noto+Sans+Nag+Mundari&family=Noto+Serif+JP&family=Open+Sans&family=Pacifico&family=Pangolin&family=Prata&family=Press+Start+2P&family=Roboto&family=Sacramento&family=Space+Grotesk&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    transition: 1s;
+}
+
+body{
+    background-color: black;
+    
+}
+
+hr{
+    margin: auto;
+    width: 1900px;
+}
+
+nav{
+    height: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15cm;
+    padding-left: 35%;
+    padding-right: 100%;
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+li{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    font-family: 'jura', sans-serif;
+}
+
+/*ul li{
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    margin-top: 25px;
+}*/
+
+/*
+#hamburger{
+  
+    right: 20px;
+}
+
+#titre{
+    margin-right: 31%;
+}
+
+#allumer{
+    position: relative;
+    left: 20px;
+    margin-right: 32%;
+}
+*/
+#bouton{
+    background-color: white;
+    border:none;
+}
+
+#bouton:hover{
+
+    text-shadow: 0px 0px 15px 5px rgba(95, 133, 95, 0.5);
+}
+
+
+#bouton-allumer{
+    color: rgb(31, 223, 100);
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgb(31, 223, 100);
+    border-radius: 3px;
+    font-family: 'jura', serif;
+    background-color: transparent;
+}
+
+#bouton-allumer:hover{
+    background-color: rgb(31, 223, 100);
+    color: white;
+    transition-duration: 0.3s;
+}
+
+
+
+h1{
+    color: rgb(31, 223, 100);
+    font-family: 'Jura', serif;  
+    font-size: 30pt;
+    word-spacing: 2cm;
+}
+
+.boite{
+    margin: auto;
+    width: 600px;
+    height: 850px;
+    border-radius: 10qpx;
+    background-color: #202020;
+    /*box-shadow: 0px 0px 15px 0.1px #ccc;*/
+    position:relative;
+    top: 30px;
+}
+
+/*********************** Partie design du cadran ***********************/
+
+.logo{
+    position: relative;
+    left: 271.5px;
+    margin: auto;
+    top: inherit;
+}
+
+.cadran{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: white;
+    margin: 50px auto;
+    position: relative;
+    top: 247px;
+}
+
+.point-central{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 137px;
+    left: 137px;
+    z-index: 2;
+}
+.graduation-cadran{
+    width: 8px;
+    height: 280px;
+    background-color: black;
+    position: absolute;
+    left: 145.5px;
+    top: 7px;
+}
+
+.graduation-cadran-12{
+    transform: rotate(-90deg);
+}
+
+.graduation-cadran-13{
+    transform: rotate(-80deg);
+}
+
+.graduation-cadran-14{
+    transform: rotate(-70deg);
+}
+
+.graduation-cadran-15{
+    transform: rotate(-60deg);
+}
+
+.graduation-cadran-16{
+    transform: rotate(-50deg);
+}
+
+.graduation-cadran-17{
+    transform: rotate(-40deg);
+}
+
+.graduation-cadran-18{
+    transform: rotate(-30deg);
+}
+
+.graduation-cadran-19{
+    transform: rotate(-20deg);
+}
+
+.graduation-cadran-20{
+    transform: rotate(-10deg);
+}
+
+.graduation-cadran-21{
+    transform: rotate(0deg);
+}
+
+.graduation-cadran-22{
+    transform: rotate(10deg);
+}
+
+.graduation-cadran-23{
+    transform: rotate(20deg);
+}
+
+.graduation-cadran-24{
+    transform: rotate(30deg);
+}
+
+.graduation-cadran-25{
+    transform: rotate(40deg);
+}
+
+.graduation-cadran-26{
+    transform: rotate(50deg);
+}
+
+.graduation-cadran-27{
+    transform: rotate(60deg);
+}
+
+.graduation-cadran-28{
+    transform: rotate(70deg);
+}
+
+.graduation-cadran-29{
+    transform: rotate(80deg);
+}
+
+.graduation-cadran-30{
+    transform: rotate(90deg);
+}
+
+.cache-centre-cadran{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 24.5px;
+    z-index: 1;
+}
+
+.cache-pied-cadran{
+    width: 310px;
+    height: 150px;
+    background-color: #202020;
+    position: absolute;
+    top: 160px;
+    left: -5px;
+    z-index: 3;
+    border-top: 3px solid black;
+}
+
+.boite-aiguille-cadran{
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    position: absolute;
+    top: 67px;
+    left: 67px;
+    z-index: 4;
+}
+
+.cache-aiguille-cadran{
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.aiguille-cadran{
+    width: 110px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 78px;
+    left: -30px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.rotation-aiguille-0{
+    transform: rotate(0deg);
+}
+
+.rotation-aiguille-10{
+    transform: rotate(10deg);
+}
+
+.rotation-aiguille-20{
+    transform: rotate(20deg);
+}
+
+.rotation-aiguille-30{
+    transform: rotate(30deg);
+}
+
+.rotation-aiguille-40{
+    transform: rotate(40deg);
+}
+
+.rotation-aiguille-50{
+    transform: rotate(50deg);
+}
+
+.rotation-aiguille-60{
+    transform: rotate(60deg);
+}
+
+.rotation-aiguille-70{
+    transform: rotate(70deg);
+}
+
+.rotation-aiguille-80{
+    transform: rotate(80deg);
+}
+
+.rotation-aiguille-90{
+    transform: rotate(90deg);
+}
+
+.rotation-aiguille-100{
+    transform: rotate(100deg);
+}
+
+.rotation-aiguille-110{
+    transform: rotate(110deg);
+}
+
+.rotation-aiguille-120{
+    transform: rotate(120deg);
+}
+
+.rotation-aiguille-130{
+    transform: rotate(130deg);
+}
+
+.rotation-aiguille-140{
+    transform: rotate(140deg);
+}
+
+.rotation-aiguille-150{
+    transform: rotate(150deg);
+}
+
+.rotation-aiguille-160{
+    transform: rotate(160deg);
+}
+
+.rotation-aiguille-170{
+    transform: rotate(170deg);
+}
+
+.rotation-aiguille-180{
+    transform: rotate(180deg);
+}
+
+
+/*********************** entrer des données (label) ***********************/
+
+label{
+    z-index: 5;
+    font-weight: bolder;
+    background-color: #202020;
+    position: relative;
+    left: 0px;
+}
+
+input{
+    z-index: 5;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: -9px;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Jura', serif; 
+    font-weight: bold;
+    text-align: center;
+}
+
+#boutonValider{
+    color: rgb(31, 223, 100);
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgb(31, 223, 100);
+    border-radius: 3px;
+    font-family: 'jura', serif;
+    background-color: transparent;
+    position: relative;
+    left: 22px;
+    z-index: 5;
+}
+
+#boutonValider:hover{
+    background-color: rgb(31, 223, 100);
+    color: white;
+    transition-duration: 0.25s;
+}
+
+#boutonValider:active{
+    background-color: darkgreen ;
+    transition-duration: 0.2s;
+}
+
+.visuel-humidite{
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    left: 240px;
+    top: -32px;
+}
