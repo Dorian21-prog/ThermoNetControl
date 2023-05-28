@@ -74,7 +74,6 @@ hr{
     border: 1px solid white;
 }
 
-
 h1{
     color: rgb(31, 223, 100);
     font-family: 'Jura', serif;  
@@ -88,7 +87,6 @@ h1{
     height: 850px;
     border-radius: 10qpx;
     background-color: #202020;
-    /*box-shadow: 0px 0px 15px 0.1px #ccc;*/
     position:relative;
     top: 30px;
 }
